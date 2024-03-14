@@ -22,10 +22,12 @@
 
 @keyframes partAnimation {
     0% {
-        transform: scale(0)
+        /* transform: scale(0); */
+        opacity: 0;
     }
     100% {
-        transform: scale(1);
+        /* transform: scaleX(1); */
+        opacity: 1;
     }
 }
 
@@ -65,6 +67,18 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: wheat;
 }
 
 .nav_homework {
@@ -130,7 +144,6 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
 #homework_item3:checked + #part3,
 #homework_item4:checked + #part4 {
     display: flex;
-    animation: partAnimation .4s linear;
 }
 
 .part_list {
@@ -189,6 +202,7 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
     gap: 40px;
     background-color: var(--bg-block);
     padding: 10px 20px;
+    animation: partAnimation .4s linear;
 }
 
 .part abbr {text-decoration: none;}
@@ -200,10 +214,6 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
         flex-direction: column;
         align-items: center;
         gap: 10px;
-    }
-
-    h1 {
-        text-align: center;
     }
 
     nav {
