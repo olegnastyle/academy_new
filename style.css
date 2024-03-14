@@ -45,7 +45,7 @@ html, body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: brown;
+    color: var(--bg-dark);
     width: 100%;
     height: 100%;
 }
@@ -55,7 +55,7 @@ header, footer {
     align-items: center;
     justify-content: space-between;
     background-color: var(--bg-dark);
-    color: wheat;
+    color: var(--text);
     padding: 20px 40px;
 }
 
@@ -76,7 +76,7 @@ nav a {
     padding: 10px;
     margin-bottom: 10px;
     text-decoration: none;
-    color: wheat;
+    color: var(--text);
 }
 
 .nav_homework {
@@ -89,7 +89,7 @@ nav a {
 .nav_homework:hover .homework_list {
     display: flex;
     position: absolute;
-    background-color: brown;
+    background-color: var(--bg-dark);
     filter: drop-shadow(0 0 1px black);
 }
 
@@ -111,7 +111,7 @@ nav a {
 
 .homework_list label {
     display: block;
-    color: wheat;
+    color: var(--text);
     cursor: pointer;
     padding: 10px 0;
     text-indent: 5px;
@@ -119,7 +119,7 @@ nav a {
 
 .homework_list label:hover {
     background-color: var(--bg-block);
-    color: brown;
+    color: var(--bg-dark);
 }
 
 .homework_list li:first-child label:hover {
@@ -158,7 +158,7 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
     background-color: var(--bg-dark);
     padding: 5px 15px;
     text-wrap: nowrap;
-    color: wheat;
+    color: var(--text);
     width: 120px;
     text-decoration: none;
     border-radius: 3px;
@@ -166,7 +166,7 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
 
 .logo {text-decoration: none;}
 .logo h2 {
-    color: wheat;
+    color: var(--text);
     font-family: "Czizh Body", cursive;
     font-optical-sizing: auto;
     display: flex;
@@ -205,7 +205,7 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
 }
 
 .part abbr {text-decoration: none;}
-.foot-up {color: wheat;}
+.foot-up {color: var(--text);}
 
 @media screen and (max-width: 720px) {
 
