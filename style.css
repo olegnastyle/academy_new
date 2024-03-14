@@ -223,7 +223,6 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
         gap: 10px;
     }
 
-    nav {
-        gap: 10px;
-    }
+    nav {gap: 10px;}
+    nav h3 {font-size: 14px;}
 }
