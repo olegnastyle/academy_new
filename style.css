@@ -145,19 +145,6 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
     border-radius: 3px;
 }
 
-.part_list li a:hover, nav a:hover, .foot-up:hover {
-    filter: brightness(1.4);
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-}
-
-.part_list li a:active, nav a:active {
-    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-}
-
 .logo {text-decoration: none;}
 .logo h2 {
     color: wheat;
@@ -197,7 +184,6 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
 }
 
 .part abbr {text-decoration: none;}
-
 .foot-up {color: wheat;}
 
 @media screen and (max-width: 720px) {
