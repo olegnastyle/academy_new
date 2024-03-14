@@ -67,20 +67,20 @@ main {
     padding: 20px;
 }
 
-nav {
+.nav_homework {
     padding: 10px;
     border-radius: 10px;
     position: relative;
     z-index: 10;
 }
 
-nav:hover .homework_list {
+.nav_homework:hover .homework_list {
     display: flex;
     position: absolute;
     background-color: brown;
     filter: drop-shadow(0 0 1px black);
 }
-nav h3 {display: flex;gap: 5px;cursor: pointer;padding-bottom: 10px;}
+.nav_homework h3 {display: flex;gap: 5px;cursor: pointer;padding-bottom: 10px;}
 
 .homework_list {
     list-style: none;
