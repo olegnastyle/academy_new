@@ -80,7 +80,7 @@ nav:hover .homework_list {
     background-color: brown;
     filter: drop-shadow(0 0 1px black);
 }
-nav h3 {cursor: pointer;padding-bottom: 10px;}
+nav h3 {display: flex;gap: 5px;cursor: pointer;padding-bottom: 10px;}
 
 .homework_list {
     list-style: none;
