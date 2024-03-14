@@ -204,6 +204,12 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
     animation-delay: calc(.2s * var(--block));
 }
 
+.block_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .part abbr {text-decoration: none;}
 .foot-up {color: var(--text);}
 
