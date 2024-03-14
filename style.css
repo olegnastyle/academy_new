@@ -224,5 +224,5 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
     }
 
     nav {gap: 10px;}
-    nav h3 {font-size: 14px;}
+    nav h3 {font-size: 14px;text-wrap: nowrap;}
 }
