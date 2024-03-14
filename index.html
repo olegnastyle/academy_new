@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер на чистом HTML и CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- подключение шрифта Madimi One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- подключаем шрифт Whisper -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><h2>
+            <span style="--i:1">О</span>
+            <span style="--i:2">л</span>
+            <span style="--i:3">е</span>
+            <span style="--i:4">г</span>
+            <span>	&nbsp;</span>
+            <span style="--i:5">Н</span>
+            <span style="--i:6">у</span>
+            <span style="--i:7">р</span>
+            <span style="--i:8">ж</span>
+            <span style="--i:9">а</span>
+            <span style="--i:10">н</span>
+            <span style="--i:11">о</span>
+            <span style="--i:12">в</span>
+        </h2></a>
+        <nav>
+            <h3>Домашние задания</h3>
+            <ul class="homework_list">
+                <li><label for="homework_item1">Часть 1</label></li>
+                <li><label for="homework_item2">Часть 2</label></li>
+                <li><label for="homework_item3">Часть 3</label></li>
+                <li><label for="homework_item4">Часть 4</label></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Домашние задания</h1>
+        <input type="radio" name="nav" id="homework_item1" checked>
+        <div id="part1" class="part">
+            <h2>Часть 1. Задачи по HTML без использования стилей</h2>
+            <ul class="part_list">
+                <li><a href="./01/lesson1.html">Задание 1</a></li>
+                <li><a href="./01/lesson2.html">Задание 2</a></li>
+                <li><a href="./01/lesson3.html">Задание 3</a></li>
+                <li><a href="./01/lesson4.html">Задание 4</a></li>
+                <li><a href="./01/lesson5.html">Задание 5</a></li>
+                <li><a href="./01/lesson6.html">Задание 6</a></li>
+                <li><a href="./01/lesson7.html">Задание 7</a></li>
+                <li><a href="./01/lesson8.html">Задание 8</a></li>
+                <li><a href="./01/lesson9.html">Задание 9</a></li>
+                <li><a href="./01/lesson10.html">Задание 10</a></li>
+                <li><a href="./01/lesson11.html">Задание 11</a></li>
+                <li><a href="./01/lesson12.html">Задание 12</a></li>
+                <li><a href="./01/lesson13.html">Задание 13</a></li>
+                <li><a href="./01/lesson14.html">Задание 14</a></li>
+            </ul>
+        </div>
+        <input type="radio" name="nav" id="homework_item2">
+        <div id="part2" class="part">
+            <h2>Часть 2. Задачи по HTML и CSS</h2>
+            <p>Задания скоро будут..</p>
+        </div>
+        <input type="radio" name="nav" id="homework_item3">
+        <div id="part3" class="part">
+            <h2>Часть 3. Шаблоны HTML и CSS </h2>
+            <p>Задания скоро будут..</p>
+        </div>
+        <input type="radio" name="nav" id="homework_item4">
+        <div id="part4" class="part">
+            <h2>Часть 4. Верстка макета Figma</h2>
+            <p>Задания скоро будут..</p>
+        </div>
+    </main>
+    <footer>
+        <h3>© 2024</h3>
+        <a href="#" class="foot-up"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8543 11.9741L16.2686 10.5599L12.0259 6.31724L7.78327 10.5599L9.19749 11.9741L11.0259 10.1457V17.6828H13.0259V10.1457L14.8543 11.9741Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M1 19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5C2.79086 1 1 2.79086 1 5V19ZM5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z" fill="currentColor" /></svg></a>
+    </footer>
+</body>
+</html>

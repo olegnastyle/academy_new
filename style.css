@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: all .1s linear;
+}
+
+:root {
+    --bg: aliceblue;
+    --bg-block: burlywood;
+    --bg-dark: brown;
+    --text: wheat;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-block);
+}
+
+@keyframes partAnimation {
+    0% {
+        transform: scale(0)
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@font-face {
+    font-family: "Czizh Body";
+    src: url(./font/czizh.ttf);
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: brown;
+    width: 100%;
+    height: 100%;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-dark);
+    color: wheat;
+    padding: 20px 40px;
+}
+
+main {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+nav {
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+nav:hover .homework_list {
+    display: flex;
+    position: absolute;
+    background-color: brown;
+    filter: drop-shadow(0 0 1px black);
+}
+nav h3 {cursor: pointer;padding-bottom: 10px;}
+
+.homework_list {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.homework_list label {
+    display: block;
+    color: wheat;
+    cursor: pointer;
+    padding: 10px 0;
+    text-indent: 5px;
+}
+
+.homework_list label:hover {
+    background-color: var(--bg-block);
+    color: brown;
+}
+
+.homework_list li:first-child label:hover {
+    border-radius: 10px 10px 0 0;
+}
+
+.homework_list li:last-child label:hover {
+    border-radius: 0 0 10px 10px;
+}
+
+.homework_list label:active {
+    filter: brightness(.8);
+}
+
+/* делаем навигацию при помощи checked */
+
+input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
+#homework_item1:checked + #part1,
+#homework_item2:checked + #part2,
+#homework_item3:checked + #part3,
+#homework_item4:checked + #part4 {
+    display: flex;
+    animation: partAnimation .4s linear;
+}
+
+
+
+.part_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.part_list li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-dark);
+    padding: 5px 15px;
+    text-wrap: nowrap;
+    color: wheat;
+    width: 120px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.part_list li a:hover, nav a:hover, .foot-up:hover {
+    filter: brightness(1.4);
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.part_list li a:active, nav a:active {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+
+@keyframes flip {
+    0%, 80% {transform: rotateY(360deg)}
+}
+
+.logo {text-decoration: none;}
+.logo h2 {
+    color: wheat;
+    font-family: "Czizh Body", cursive;
+    font-optical-sizing: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo span {
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+    display: inline-block;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 40px;
+    background-color: var(--bg-block);
+    padding: 10px 20px;
+}
+
+.foot-up {color: wheat;}
+
+@media screen and (max-width: 720px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    footer nav {
+        display: none;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .foot-up {
+        
+    }
+}
