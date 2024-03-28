@@ -50,6 +50,7 @@ html, body {
     color: var(--bg-dark);
     width: 100%;
     height: 100%;
+    align-content: space-between;
 }
 
 header, footer {
@@ -212,7 +213,6 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
     gap: 10px;
 }
 
-.part abbr {text-decoration: none;}
 .foot-up {color: var(--text);}
 
 @media screen and (max-width: 720px) {
@@ -225,4 +225,64 @@ input[type="radio"], #part1, #part2, #part3, #part4 {display: none;}
 
     nav {gap: 10px;}
     nav h3 {font-size: 14px;text-wrap: nowrap;}
+}
+
+/* выбор языка */
+
+.label__en {
+    position: fixed;
+    bottom: 120px;
+    right: 40px;
+    padding: 10px;
+    display: block;
+    background-color: brown;
+    color: wheat;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.label__ru {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    padding: 10px;
+    display: block;
+    background-color: brown;
+    color: wheat;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.ru, .en {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#ru:checked ~ .ru {
+    display: flex;
+}
+
+#ru:checked ~ .label__ru {
+    box-shadow: 0 0 10px #00000080 inset;
+}
+
+#en:checked ~ .label__en {
+    box-shadow: 0 0 25px #00000080 inset;
+}
+
+#ru, #en {
+    display: none;
+}
+
+.ru, .en {
+    display: none;
+}
+#en:checked ~ .en {
+    display: flex;
 }
